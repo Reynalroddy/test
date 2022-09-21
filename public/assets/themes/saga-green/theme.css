@@ -47,6 +47,8 @@
 
 * {
   box-sizing: border-box;
+  /* overflow-x: hidden !important; */
+  /* border: 2px solid red; */
 }
 
 .p-component {
