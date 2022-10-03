@@ -23,6 +23,8 @@ import Register from "./pages/Register";
 // import AdminVerified from "./pages/AdminVerified";
 import Dashboard from "./pages/Dashboard";
 import Testz from "./components/SharedLayout";
+import DirectAssessment from "./pages/DirectAssessment";
+import AssessmentSummary from "./pages/AssessmentSummary";
 const App = () => {
   return (
     <Router>
@@ -36,6 +38,8 @@ const App = () => {
           }
         >
           <Route index element={<Dashboard/>} />
+          <Route path='direct-assessment' element={<DirectAssessment/>} />
+          <Route path='assessment-summary' element={<AssessmentSummary/>} />
           {/* <Route path='verified' element={<Verified/>} />
           <Route path='flagged' element={<Flagged/>} />
           <Route path='single' element={<SingleApplication/>} /> */}

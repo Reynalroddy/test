@@ -10,6 +10,7 @@ import icon2 from '../assets/images/irms/2.png'
 import icon3 from '../assets/images/irms/3.png'
 import icon4 from '../assets/images/irms/4.png'
 import icon5 from '../assets/images/irms/5.png'
+import { Link } from 'react-router-dom';
 // import icon6 from '../assets/images/irms/logo.png'
 // import Avatar from "../assets/images/avatar.png";
 // import { InputText } from 'primereact/inputtext';
@@ -88,47 +89,30 @@ const Testz = () => {
                             <div className="flex flex-column h-full">
                                 <div className="overflow-y-auto">
                                 <ul className="list-none p-3 m-0 mt-4">
-                    <li>
-                         {/* eslint-disable-next-line  */}
-                        <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                                    <Link to='/dashboard'>
+                                   
+                    <li className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
                 transition-duration-150 transition-colors w-full">
-                            {/* <i className="pi pi-home mr-2 text-green-700 font-bold"></i> */}
+                         {/* eslint-disable-next-line  */}
+                      
                             <img src={icon1} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
                             <span className="font-medium  font-medium" style={{color:'#038541'}}>Dashboard</span>
                             <Ripple />
-                        </a>
+                       
                     </li>
+                    </Link>
                     
-                    {/* <li>
-                        <StyleClass nodeRef={btnRef1} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
-                            <a ref={btnRef1} className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                    <Link to='/dashboard/direct-assessment'>
+                    <li className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
                 transition-duration-150 transition-colors w-full">
-                                <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
-                                <span className="text-gray-700 font-medium">Requests</span>
-                                <i className="pi pi-chevron-right ml-auto mr-1"></i>
-                                <Ripple />
-                            </a>
-                        </StyleClass>
-                        <ul className="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
-                          
-                            <li>
-                                <Link to='/admin/admin-approved' className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
-                    transition-duration-150 transition-colors w-full">
-                                    <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
-                                    <span className="font-medium text-gray-700">Approved Requests</span>
-                                    <Ripple />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link  to='/admin/admin-flagged' className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
-                    transition-duration-150 transition-colors w-full">
-                                    <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
-                                    <span className="font-medium text-gray-700">Flagged Requests</span>
-                                    <Ripple />
-                                </Link>
-                            </li>
-                        </ul>
-                    </li> */}
+                       
+                            <img src={icon5} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
+                            <span className="font-medium  font-medium" style={{color:'#C48117'}}>Direct Assessment</span>
+                            <Ripple />
+                       
+                    </li>
+                    </Link>
+                  
 
                     <li>
                          {/* eslint-disable-next-line  */}
@@ -149,15 +133,7 @@ const Testz = () => {
                             <Ripple />
                         </a>
                     </li>
-                    <li>
-                         {/* eslint-disable-next-line  */}
-                        <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
-                transition-duration-150 transition-colors w-full">
-                            <img src={icon5} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
-                            <span className="font-medium  font-medium" style={{color:'#C48117'}}>Direct Assessment</span>
-                            <Ripple />
-                        </a>
-                    </li>
+                   
                     <li>
                          {/* eslint-disable-next-line  */}
                         <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 

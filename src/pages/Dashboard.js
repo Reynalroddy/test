@@ -8,9 +8,11 @@ import { Button } from 'primereact/button';
 import { Chart } from 'primereact/chart';
 import { InputText } from 'primereact/inputtext';
 const Dashboard = () => {
+// eslint-disable-next-line
     const [loading1, setLoading1] = useState(true);
     // const [filters1, setFilters1] = useState(null);
     // const [globalFilterValue1, setGlobalFilterValue1] = useState('');
+    // eslint-disable-next-line
     const [products, setProducts] = useState([]);
 
     const lineData = {
@@ -163,7 +165,7 @@ const Dashboard = () => {
                             <Column field="bill" header="Bill ref"></Column>
                              <Column field="status" header="Status" body={statusBodyTemplate2}/>
                             
-
+            
                             <Column field="method" header="Method"  />
                         </DataTable> 
                     </div>
