@@ -24,20 +24,19 @@ const Testz = () => {
     // const btnRef2 = useRef(null);
   return (
   
-    <div className="min-h-screen flex flex-column surface-ground">
+    <div className="min-h-screen flex flex-column surface-ground print-hide">
                     <div className=" py-3 px-6 flex align-items-center justify-content-between relative lg:sticky top-0 left-0 z-3 " style={{backgroundColor:'#038541' ,height:'65px'}}>
                         <StyleClass nodeRef={btnRef54} selector="#app-sidebar-12" enterClassName="hidden" enterActiveClassName="fadeinleft" leaveToClassName="hidden" leaveActiveClassName="fadeoutleft" hideOnOutsideClick>
                          {/* eslint-disable-next-line  */}
-                            <a ref={btnRef54} className="p-ripple cursor-pointer block lg:hidden text-700">
+                            <a ref={btnRef54} className="p-ripple cursor-pointer block lg:hidden text-700 print-hide">
                                 <i className="pi pi-bars text-4xl"></i>
                                 <Ripple />
                             </a>
                         </StyleClass>
-                        <img src={Logo} alt="Img" height="50" className="loc-img mr-0 lg:mr-6" />
+                        <img src={Logo} alt="Img" height="50" className="loc-img mr-0 lg:mr-6 print-hide" />
                         <div  className="hidden lg:opacity-0 lg:block"></div> 
                         <div className="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 z-1 shadow-2 lg:shadow-none">
-                <ul className="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row ">
-                   
+                <ul className="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row ">       
                 </ul>
                 <ul className="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-indigo-400 lg:border-top-none">
                   

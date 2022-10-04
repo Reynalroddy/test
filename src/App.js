@@ -25,6 +25,8 @@ import Dashboard from "./pages/Dashboard";
 import Testz from "./components/SharedLayout";
 import DirectAssessment from "./pages/DirectAssessment";
 import AssessmentSummary from "./pages/AssessmentSummary";
+import Notice from "./pages/Notice";
+import Bill from "./pages/Bill";
 const App = () => {
   return (
     <Router>
@@ -40,6 +42,8 @@ const App = () => {
           <Route index element={<Dashboard/>} />
           <Route path='direct-assessment' element={<DirectAssessment/>} />
           <Route path='assessment-summary' element={<AssessmentSummary/>} />
+          <Route path='view-notice' element={<Notice/>} />
+          <Route path='view-bill' element={<Bill/>} />
           {/* <Route path='verified' element={<Verified/>} />
           <Route path='flagged' element={<Flagged/>} />
           <Route path='single' element={<SingleApplication/>} /> */}

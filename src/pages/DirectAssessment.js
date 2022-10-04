@@ -31,6 +31,20 @@ const add1=()=>{
     setVal1(abc)
 }
 
+
+
+
+//    var UploadFieldID = "file-upload";
+//    var MaxSizeInBytes = 2097152;
+//    var fld = document.getElementById(UploadFieldID);
+//    if( fld.files && fld.files.length == 1 && fld.files[0].size > MaxSizeInBytes )
+//    {
+//       alert("The file size must be no more than " + parseInt(MaxSizeInBytes/1024/1024) + "MB");
+//       return false;
+//    }
+//    return true;
+// } 
+
 // const handleChange=(onChangeValue,i,name)=>{
 //     const inputdata = [...val];
 //     inputdata[i][name] = onChangeValue.target.value;
@@ -174,7 +188,8 @@ val.map((item,i)=>{
 </div>
 <div className="field mb-4 col-12 md:col-4">
    <label htmlFor="comp_name" className="font-medium text-sm text-900 ">Supporting document</label>
-   <InputText id="comp_name" type="text" className='border-none border-bottom-2 outline-none' />
+   {/* <InputText id="comp_name" type="text" className='border-none border-bottom-2 outline-none' /> */}
+   <input type='file' />
 </div>
 
 
@@ -208,7 +223,8 @@ val.map((item,i)=>{
         </div>
         <div className="field mb-4 col-12 md:col-4">
             <label htmlFor="comp_name" className="font-medium text-sm text-900 ">Supporting document</label>
-            <InputText id="comp_name" type="text" className='border-none border-bottom-2 outline-none' />
+            {/* <InputText id="comp_name" type="text" className='border-none border-bottom-2 outline-none' /> */}
+            <input type='file' />
         </div>
         </div>
         })

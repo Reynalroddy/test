@@ -1,6 +1,19 @@
 import React from 'react'
 import { Button } from 'primereact/button';
+import { useNavigate } from 'react-router-dom';
 const AssessmentSummary = () => {
+   const navigate=useNavigate()
+  
+const viewNotice=()=>{
+
+    navigate('/dashboard/view-notice')
+}
+
+const viewBill=()=>{
+
+    navigate('/dashboard/view-bill')
+}
+
   return (
     <div className="grid" >
                 <div className="col-12 md:col-12 lg:col-12">
@@ -45,16 +58,20 @@ const AssessmentSummary = () => {
            
             <div className="flex md:align-items-center gap-3  border-top-1 surface-border p-3 flex-column md:flex-row">
             
-                <Button  label="Generate Notice" className="p-button-outlined mt-2 md:mt-0" />
+                <Button  label="Generate Notice" className="p-button-outlined mt-2 md:mt-0" onClick={viewNotice} />
         
         
-                <Button  label="Generate Bill" className=" mt-2 md:mt-0 border-none text-sm" style={{background:'#3C66A3'}} />
+                <Button  label="Generate Bill" onClick={viewBill} className=" mt-2 md:mt-0 border-none text-sm" style={{background:'#3C66A3'}} />
             </div>
         </div>
     </div>
 </div>
 </div>
+{/* notice */}
+
 </div>
+
+
   )
 }
 
