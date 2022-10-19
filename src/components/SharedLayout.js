@@ -113,6 +113,17 @@ const Testz = () => {
                     </Link>
                   
 
+                    {/* <Link to='/dashboard/mda'>
+                    <li className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                transition-duration-150 transition-colors w-full">
+                       
+                            <img src={icon5} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
+                            <span className="font-medium  font-medium" style={{color:'#C48117'}}>MDA</span>
+                            <Ripple />
+                       
+                    </li>
+                    </Link> */}
+
                     <li>
                          {/* eslint-disable-next-line  */}
                         <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
@@ -123,16 +134,29 @@ const Testz = () => {
                         </a>
                     </li>
 
-                    <li>
-                         {/* eslint-disable-next-line  */}
-                        <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                    <Link to='/dashboard/mda'>
+                    <li className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
                 transition-duration-150 transition-colors w-full">
                             <img src={icon3} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
                             <span className="font-medium  font-medium" style={{color:'#17BDC4'}}>MDA</span>
                             <Ripple />
-                        </a>
+                        
                     </li>
+                    </Link>
                    
+
+                    <Link to='/dashboard/transaction-bills'>
+                    
+                    <li className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                transition-duration-150 transition-colors w-full">
+                       
+                            <img src={icon5} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
+                            <span className="font-medium  font-medium" style={{color:'#C48117'}}>Transaction Bills</span>
+                            <Ripple />
+                       
+                    </li>
+                    </Link>
+                    
                     <li>
                          {/* eslint-disable-next-line  */}
                         <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 

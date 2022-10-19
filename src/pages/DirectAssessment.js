@@ -32,8 +32,81 @@ const add1=()=>{
 }
 
 
+//  const sortArray =(arr)=>{
+
+//     const odd=[];
+//     const even=[];
+
+//     for(let i=0;i<arr.length;i++){
+
+// if(typeof(arr[i])==='number'){
+
+// if(arr[i] %2 ===1){
+
+//     odd.push(arr[i])
+// }
+// else{
+
+//     even.push(arr[i])
+// }
 
 
+// }
+
+//     }
+
+//  const newArz = arr.map((item,i)=>{
+
+// if(typeof(item) ==='number'){
+
+//     if(item % 2 ===1 ){
+
+//          odd.push(item);
+//     }
+//     else{
+//      even.push(item)
+//     }
+
+// let dz = odd.sort((a,b)=>a-b).concat(even.sort((a,b)=>a-b));
+
+// return dz;
+
+// }
+
+//     })
+// let dz = odd.sort((a,b)=>a-b).concat(even.sort((a,b)=>a-b));
+
+// console.log(dz)
+
+//  }
+
+//  sortArray([5,'abc',8,9,3]);
+//  * Given two numbers X and Y, write a function that:
+//  * 1. returns even numbers btw X & Y, if X > Y, else
+//  * 2. returns odd numbers btw X & Y
+ 
+
+//  const getVal=(v1,v2)=>{
+//     let num=[];
+// if(v1 > v2){
+// for(let i = v2 ;i<v1;i++){
+// num.push(i);
+// return num.filter((item)=>item %2 ===0)
+// }
+// }
+// else{
+//     for(let i=v1;i<v2;i++){
+
+//     }
+// }
+
+// }
+// else{
+
+// }
+
+
+//  }
 //    var UploadFieldID = "file-upload";
 //    var MaxSizeInBytes = 2097152;
 //    var fld = document.getElementById(UploadFieldID);
@@ -180,7 +253,6 @@ val.map((item,i)=>{
     <div className="field mb-4 col-12 md:col-4">
    <label htmlFor="item" className="font-medium text-sm text-900">Source of income </label>
 <Dropdown  options={city}  placeholder="Source of income"/>
-
 </div>
 <div className="field mb-4 col-12 md:col-4">
    <label htmlFor="company_name" className="font-medium text-sm text-900 ">Amount</label>
@@ -262,6 +334,8 @@ val.map((item,i)=>{
         <Button label="Submit"  className="w-auto mb-7 md:mb-0" onClick={regz} />
     </div>
                 </Dialog>
+
+
             </div>
 
 
