@@ -29,6 +29,8 @@ import Notice from "./pages/Notice";
 import Bill from "./pages/Bill";
 import Mda from "./pages/Mda";
 import TransactionBill from "./pages/TransactionBills";
+import PayeHistory from "./pages/PayeHistory";
+import EmployeeDetails from "./pages/EmployeeDetails";
 const App = () => {
   return (
     <Router>
@@ -48,9 +50,12 @@ const App = () => {
           <Route path='view-bill' element={<Bill/>} />
           <Route path='transaction-bills' element={<TransactionBill/>} />
           <Route path='mda' element={<Mda/>} />
-          {/* <Route path='verified' element={<Verified/>} />
-          <Route path='flagged' element={<Flagged/>} />
-          <Route path='single' element={<SingleApplication/>} /> */}
+          <Route
+          path="paye">
+<Route path="paye-history" element={<PayeHistory/>}></Route>
+<Route path="employee-details" element={<EmployeeDetails/>}></Route>
+          </Route>
+         
         </Route>
 
        

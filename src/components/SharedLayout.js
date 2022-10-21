@@ -21,7 +21,7 @@ const Testz = () => {
     // const btnRef56 = useRef(null);
     const btnRef30 = useRef(null);
     // const btnRef1 = useRef(null);
-    // const btnRef2 = useRef(null);
+    const btnRef2 = useRef(null);
   return (
   
     <div className="min-h-screen flex flex-column surface-ground print-hide">
@@ -125,13 +125,39 @@ const Testz = () => {
                     </Link> */}
 
                     <li>
+                    <StyleClass nodeRef={btnRef2} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
                          {/* eslint-disable-next-line  */}
-                        <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                        <a ref={btnRef2} className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
                 transition-duration-150 transition-colors w-full">
                             <img src={icon2} alt='' className='w-2rem mr-2 h-2rem' style={{objectFit:'contain'}}/>
                             <span className="font-medium  font-medium" style={{color:'#3C66A3'}}>Pay as you Earn</span>
+                            <i className="pi pi-chevron-right ml-auto mr-1"></i>
                             <Ripple />
-                        </a>
+                            </a>
+                        </StyleClass>
+                        <ul className="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                          
+                        <Link to='/dashboard/paye/paye-history'>
+                    <li  className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                  transition-duration-150 transition-colors w-full">
+                                  <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
+                                  <span className="font-medium text-gray-700">Assessment history</span>
+                                  <Ripple />
+                            
+                          </li>
+                          </Link>
+                          <Link to='/dashboard/paye/employee-details'>
+                    <li  className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
+                  transition-duration-150 transition-colors w-full">
+                                  <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
+                                  <span className="font-medium text-gray-700">Employee details</span>
+                                  <Ripple />
+                            
+                          </li>
+                          </Link>
+
+                        
+                      </ul>
                     </li>
 
                     <Link to='/dashboard/mda'>
@@ -167,7 +193,7 @@ const Testz = () => {
                         </a>
                     </li>
 
-                    {/* <li>
+                 {/* <li>
                         <StyleClass nodeRef={btnRef2} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
                             <a ref={btnRef2} className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
                 transition-duration-150 transition-colors w-full">
@@ -196,25 +222,9 @@ const Testz = () => {
                                 </a>
                             </li>
 
-                            <li>
-                                <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
-                    transition-duration-150 transition-colors w-full">
-                                    <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
-                                    <span className="font-medium text-gray-700">Rejected</span>
-                                    <Ripple />
-                                </a>
-                            </li>
-
-                            <li>
-                                <a className="p-ripple flex align-items-center cursor-pointer p-3  border-round 
-                    transition-duration-150 transition-colors w-full">
-                                    <i className="pi pi-chart-line mr-2 text-green-700 font-bold"></i>
-                                    <span className="font-medium text-gray-700">None Responsive</span>
-                                    <Ripple />
-                                </a>
-                            </li>
+                          
                         </ul>
-                    </li> */}
+                    </li>  */}
                    
                   
                  
